@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "amplifyappcb498e13": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "predictions": {
+    "lordRam": {
+      "dependsOn": [],
+      "identifyType": "identifyEntities",
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition"
+    }
+  }
+}
